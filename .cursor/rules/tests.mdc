@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: tests
+
+## Applies to
+tests/**/*, __tests__/**/*
+
+## Description
+Testing standards for unit and integration tests.
+
+## Rules
+- Use `@testing-library/react` for UI tests.
+- Snapshot tests should be minimal and purpose-driven.
+- Organize test files next to the code or under `__tests__`.
+- Mocks must be reset between tests.
+- Prefer descriptive test names using `it('should...')` syntax.

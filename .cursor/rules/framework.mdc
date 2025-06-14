@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: framework
+
+## Applies to
+framework/**/*
+
+## Description
+Guidelines for multi-provider eCommerce backend logic.
+
+## Rules
+- Each provider (e.g., BigCommerce, Shopify) must be in a separate subdirectory.
+- Do not mix logic between providers.
+- Interfaces must be standardized and provider-agnostic.
+- Avoid hardcoding business logic into the provider layer.
+- Keep shared provider types in `framework/common`.

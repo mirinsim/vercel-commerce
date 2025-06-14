@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: types
+
+## Applies to
+types/**/*
+
+## Description
+Type system guidelines for shared models and interfaces.
+
+## Rules
+- Types must be colocated with provider or feature if not used globally.
+- Avoid type duplication across features.
+- Use `export type` not `interface` unless extending.
+- Suffix custom types with `Type` (e.g., `ProductType`).

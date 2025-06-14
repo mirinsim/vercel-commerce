@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: cart
+
+## Applies to
+components/cart/**/*
+
+## Description
+Logic and UI rules specific to shopping cart features.
+
+## Rules
+- Cart must be kept in global state (e.g., context or SWR).
+- Cart UI should be responsive and accessible.
+- Provide loading state during cart updates.
+- Do not make direct API calls inside UI — use hooks instead.

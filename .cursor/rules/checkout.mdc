@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: checkout
+
+## Applies to
+components/checkout/**/*
+
+## Description
+Rules for checkout flow, forms, and submission handling.
+
+## Rules
+- Use Formik or controlled inputs for consistency.
+- Group address, payment, and review into logical steps.
+- Validate input fields both client-side and server-side.
+- Provide inline feedback for form errors.
+- Use hooks to manage order submission.

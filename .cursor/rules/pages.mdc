@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: pages
+
+## Applies to
+pages/**/*.{ts,tsx}
+
+## Description
+Rules for Next.js page components in Vercel Commerce.
+
+## Rules
+- Use `getStaticProps` and `getStaticPaths` where possible to leverage ISR/SSG.
+- Page-level components must handle loading and error states gracefully.
+- Import layout components from `@components` rather than redefining them.
+- Avoid hardcoded SEO metadata; use centralized SEO configuration.
+- All routes must be typed with Next.js `NextPage` type.

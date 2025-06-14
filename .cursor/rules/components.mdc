@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: components
+
+## Applies to
+components/**/*.{ts,tsx}
+
+## Description
+Rules for UI components, styling, and best practices.
+
+## Rules
+- Use Tailwind CSS for styling. Avoid inline styles.
+- Use `classnames` for conditional styles.
+- Prefer functional components with `FC<Props>` typing.
+- Break down large components into smaller reusable parts.
+- Maintain accessibility: label form elements, use semantic HTML, `aria-*` attributes.
+- Group reusable UI elements in `components/ui` when possible.

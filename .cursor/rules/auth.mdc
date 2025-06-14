@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: auth
+
+## Applies to
+components/auth/**/*, hooks/use-customer.ts, framework/*/auth/**/*
+
+## Description
+Guidelines for authentication and customer session logic.
+
+## Rules
+- Use `useCustomer` to manage logged-in state.
+- Protect routes with `withAuth` HOC or redirect pattern.
+- Avoid storing auth tokens in localStorage — use secure cookies.
+- Hook-based auth logic must be framework-agnostic.

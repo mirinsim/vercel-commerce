@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: tailwind
+
+## Applies to
+components/**/*
+
+## Description
+Rules for using Tailwind CSS for styling.
+
+## Rules
+- Use spacing scale consistently (`px-4`, `mt-2`, etc).
+- Prefer utility classes over custom CSS.
+- Use `@apply` sparingly — only in reusable CSS components.
+- Keep Tailwind classes ordered: layout > spacing > color > state.

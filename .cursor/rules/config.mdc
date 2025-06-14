@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Cursor Rule: config
+
+## Applies to
+config/**/*
+
+## Description
+Guidelines for global configuration files and environment variables.
+
+## Rules
+- All feature flags and environment settings must be centralized.
+- Do not access `process.env` outside `config` or `next.config.js`.
+- Config must be type-safe and consistent across environments.

@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: lib
+
+## Applies to
+lib/**/*
+
+## Description
+Rules for helper functions, fetchers, and utilities.
+
+## Rules
+- Shared utilities must not depend on UI libraries.
+- `lib/fetcher.ts` should be generic and reused across the app.
+- Use TypeScript for type-safety in all helpers.
+- Organize by function (e.g., `utils/`, `validators/`, `api/`).

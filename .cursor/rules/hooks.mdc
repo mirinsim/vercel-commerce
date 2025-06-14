@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: hooks
+
+## Applies to
+hooks/**/*
+
+## Description
+Rules for defining and using React hooks.
+
+## Rules
+- Name custom hooks with `use` prefix.
+- One responsibility per hook.
+- Use hooks to abstract API calls and business logic.
+- Place provider-specific hooks under `framework/{provider}/hooks`.
